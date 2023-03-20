@@ -10,11 +10,24 @@ const PrezzoBiglietto = kmDaPercorrere * costoChilometro;
 
 console.log(PrezzoBiglietto)
 
-const sconto20 = PrezzoBiglietto (PrezzoBiglietto * 0.2) 
+let sconto = PrezzoBiglietto
 
-const sconto40 = PrezzoBiglietto (PrezzoBiglietto * 0.4) 
+let sconto40 = PrezzoBiglietto - (PrezzoBiglietto * 0.4) 
 
-
+if (etaPasseggero <= 18) {
+  `
+Il costo del biglietto è ${sconto20} €
+`
+} else if (etaPasseggero >= 65) {
+  `
+Il costo del biglietto è ${sconto40} €
+`
+}
+else {
+  `
+Il costo del biglietto è ${PrezzoBiglietto} €
+`
+}
 
 
 const message =`
